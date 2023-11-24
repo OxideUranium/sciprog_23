@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <math.h>
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 
 // Define the function to integrate
 double f(double x) {
@@ -19,6 +22,7 @@ int main() {
 
     // Apply the trapezoidal rule
     result += (f(a) + f(b)) * h / 2.0; // First and last 
+    int i;
     for (int i = 1; i <= N - 2; ++i) { // Middle terms
         //i= 1,2,3... 10, so that 0 and 11 are not included
         result += f(a + i * h) * h;

@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <math.h>
-#define N 12
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
 
 // A global variable to store the result
 double tan_values[13];
+int N=12;
 
 //Convert degree to radian
 double degree_to_radian(double degree){
@@ -11,22 +15,22 @@ double degree_to_radian(double degree){
 }
 
 //
-double trapezodial(int num_points){
+double trapezodial(int N){
 
     // Define area
     double result=0.0;
-    double a=0;
-    double b = degree_to_radian(60);
-    double w = (b - a) / (2.0*num_points);   // Width
+    double w = degree_to_radian((60.0 - 0) / (2.0*N));   // Width
 
     //First and last term
-    result += tan_values[0] + tan_values[num_points];
+    result = tan_values[0] + tan_values[N];
 
     //Middle terms
-    for(int i=1; i<num_points-1; i++){
+    int i;
+    for( i=1; i<N; i++){
         result += tan_values[i] * 2.0;
     }
-    return result*w;
+
+    return result*w;       
 }
 
 
