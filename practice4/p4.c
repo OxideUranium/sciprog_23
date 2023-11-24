@@ -46,7 +46,6 @@ int main(void){
         angle_degree = i*5.0;
         angle_radian = degree_to_radian(angle_degree);
         tan_values[i]= tan(angle_radian);
-        printf("Drgree: %f, tan value: %f \n", angle_degree, tan_values[i]);
     }
 
     // Using trapezodial rule to calculate
