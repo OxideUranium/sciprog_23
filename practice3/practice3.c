@@ -18,12 +18,11 @@ int main() {
     double result = 0.0;
 
     // Apply the trapezoidal rule
-    result += (f(a) + f(b)) / 2.0; // First and last terms
+    result += (f(a) + f(b)) * h / 2.0; // First and last 
     for (int i = 1; i <= N - 2; ++i) { // Middle terms
         //i= 1,2,3... 10, so that 0 and 11 are not included
-        result += f(a + i * h);
+        result += f(a + i * h) * h;
     }
-    result *= h; // Multiply by the width of the trapezoids
 
     //Compare the result and print
     double error = fabs(result - log(2));
