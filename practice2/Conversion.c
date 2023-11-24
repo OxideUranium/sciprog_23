@@ -28,9 +28,8 @@ int main(void) {
 
 /* Complete the expression */
    numdigits = ceil(logf((float)inum)/logf(2.0));
+
    printf("The number of digits is %d\n",numdigits);
-
-
 
    printf("inum=%d,  fnum=%f, inum in binary=%s\n",
       inum,fnum,binnum);
