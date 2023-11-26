@@ -3,3 +3,11 @@ A simple presentation show how to conver an int to a 4-byte float and how intege
 
 # Sum.c
 sum.c shows the small errors caused by two different calculation methods.
+
+# Compile
+```
+gcc -o conversion Conversion.c
+gcc -o sum Sum.c
+./conversion
+./sum
+```

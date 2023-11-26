@@ -3,3 +3,11 @@ Use scanf to obtain user input, and use the Maclaurin method and the natural log
 
 # fibonacci.c
 Use scanf to obatin user input and calculates the Fibonacci sequence until the user specifies the value
+
+# Compile
+```
+gcc -o fibonacci fibonacci.c
+./fibonacci
+gcc -o arctanh arctanh.c
+./arctanh
+```

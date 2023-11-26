@@ -40,9 +40,9 @@ int main(void){
     //Variable for angle
     double angle_degree;
     double angle_radian;
-
+    int i;
     // First calculate the tan values and place  it in an array
-    for(int i=0; i<=N; i++){
+    for(i=0; i<=N; i++){
         angle_degree = i*5.0;
         angle_radian = degree_to_radian(angle_degree);
         tan_values[i]= tan(angle_radian);
