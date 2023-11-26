@@ -1,14 +1,11 @@
 all: main
 
-main: main.o magic_square.o
-	gcc -o main main.o magic_square.o -lm
+main: main.o 
+	gcc -o main main.o -lm -std=c99
 
-# Compile .c into .o
+# Compile main.c into main.o
 main.o: main.c magic_square.h
-	gcc -c main.c -lm
-
-magic_square.o: magic_square.h
-	gcc -c magic_square.h -lm
+	gcc -c main.c -lm -std=c99
 
 clean:
-	rm -f main main.o magic_square.o
+	rm -f main main.o

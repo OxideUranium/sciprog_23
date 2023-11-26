@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 // Checks if a matrix is a magic square.
 // A magic square is an n-sided matrix whose sum of values for each
 // row, column, main and secondary diagonals equals to n(n^2 + 1)/2.

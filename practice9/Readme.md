@@ -13,7 +13,8 @@ These are files used for testing, including different matrices
 ## Compile and run
 A Makefile is provided to compile the project.
 ```bash
-Makefile
+make
+./main
 ```
 
 

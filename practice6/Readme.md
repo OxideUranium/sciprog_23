@@ -8,4 +8,5 @@ This is a c file waiting to be called. There is only one function, which is abou
 Decide that both files should be compiled
 ```
 make
+./matmult
 ```
