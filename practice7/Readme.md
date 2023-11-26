@@ -6,6 +6,6 @@ The output of the program is the values ​​from f(1) to f(15). We can see tha
 
 ## Compile
 ```bash
-gcc -o dynamicmemory dynamicmemory.c
+gcc -o dynamicmemory dynamicmemory.c -lm
 ./dynamicmemory
 ```

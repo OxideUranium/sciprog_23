@@ -6,8 +6,8 @@ Use scanf to obatin user input and calculates the Fibonacci sequence until the u
 
 # Compile
 ```
-gcc -o fibonacci fibonacci.c
+gcc -o fibonacci fibonacci.c -lm
 ./fibonacci
-gcc -o arctanh arctanh.c
+gcc -o arctanh arctanh.c -lm
 ./arctanh
 ```

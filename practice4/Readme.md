@@ -3,6 +3,6 @@ This practice shows the use of the trapezodial method to calculate the integral 
 
 # Compile
 ```
-gcc -o p4 p4.c
+gcc -o p4 p4.c -lm
 ./p4
 ```

@@ -6,8 +6,8 @@ sum.c shows the small errors caused by two different calculation methods.
 
 # Compile
 ```
-gcc -o conversion Conversion.c
-gcc -o sum Sum.c
+gcc -o conversion Conversion.c -lm
+gcc -o sum Sum.c -lm
 ./conversion
 ./sum
 ```

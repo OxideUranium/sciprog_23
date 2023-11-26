@@ -6,6 +6,6 @@ The main entry of the program. It prompts the user to enter two integers and the
 
 ## Compile
 ```bash
-gcc -c gcd recursive.c
+gcc -c gcd recursive.c -lm
 ./gcd
 ```
